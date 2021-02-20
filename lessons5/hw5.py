@@ -2,6 +2,7 @@ import re
 
 
 def normalize(string):
+    global d
     my_set = string.maketrans("абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
                               "abvgdeëžzijklmnoprstufhcčššъyьèûâ")
     my_list = []
