@@ -24,9 +24,5 @@ class Serialization(SerializationInterface):
         with open("data_file.bin", "wb") as file:
             pickle.dump(args, file)     
 
-    
-some_data = {'key': 'value', 2: [1, 2, 3], 'tuple': (5, 6), 'a': {'key': 'value'}}
 
-dser_json = Serialization()
-dser_json.create_json_file(some_data)
 
